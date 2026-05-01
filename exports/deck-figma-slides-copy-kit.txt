@@ -1,0 +1,262 @@
+John Mayer deck — copy text into Figma Slides (https://www.figma.com/slides/wQStwJmNyOUdbNuPOoWwRg)
+Template layouts: match layout id per slide; footer when shown: ©2026 Collaboration Design. All rights reserved.
+
+================================================================================
+SLIDE 1 — layout: title-slide
+================================================================================
+Pre-title (optional):
+Artist spotlight
+
+Title (required):
+John Mayer
+
+Sub-title (optional):
+Singer, songwriter, guitarist
+
+Presenter name (optional):
+Momentum template demo
+
+Date (optional):
+April 30, 2026
+
+================================================================================
+SLIDE 2 — layout: agenda
+================================================================================
+Pre-title (optional):
+John Mayer
+
+Main heading (left — e.g. “Agenda”):
+Agenda
+
+Agenda topics (numbered 1–4; subtitles consistent):
+
+1. Career arc
+   From clubs to arenas
+
+2. Records & songs
+   Albums that define his sound
+
+3. Guitar & live performance
+   Tone, technique, collaboration
+
+4. Cultural footprint
+   Influence beyond the charts
+
+Footer:
+©2026 Collaboration Design. All rights reserved.
+
+================================================================================
+SLIDE 3 — layout: section-divider
+================================================================================
+Section title:
+Career arc
+
+Subtitle:
+From clubs to arenas
+
+Footer:
+©2026 Collaboration Design. All rights reserved.
+
+================================================================================
+SLIDE 4 — layout: content-single-column-left
+================================================================================
+Slide pre-title:
+Career arc
+
+Title:
+Origins & breakthrough
+
+Body:
+Born October 16, 1977; grew up in Connecticut and gravitated early to blues rock and Stevie Ray Vaughan.
+
+Brief Berklee College of Music studies, then the Atlanta singer-songwriter circuit—building a live fanbase before mainstream radio.
+
+Debut studio LP Room for Squares (2001, wide release 2003) catalyzed hits like "Your Body Is a Wonderland" and established his melodic, conversational songwriting voice.
+
+Footer:
+©2026 Collaboration Design. All rights reserved.
+
+================================================================================
+SLIDE 5 — layout: content-single-column-right
+================================================================================
+Slide pre-title:
+Career arc
+
+Title:
+Continuum & artistic pivot
+
+Body:
+Continuum (2006) widened his blues vocabulary and guitar hero credibility—tracks like "Gravity" and "Waiting on the World to Change" balanced FM hooks with extended solo sections live.
+
+Grammy recognition and evolving production choices (from polished pop-rock to rootsier textures on later albums) show a long arc rather than a single "sound era."
+
+Footer:
+©2026 Collaboration Design. All rights reserved.
+
+================================================================================
+SLIDE 6 — layout: section-divider
+================================================================================
+Section title:
+Records & songs
+
+Subtitle:
+Albums that define his sound
+
+Footer:
+©2026 Collaboration Design. All rights reserved.
+
+================================================================================
+SLIDE 7 — layout: content-single-column-full-width
+================================================================================
+Slide pre-title:
+Records & songs
+
+Title:
+Studio highlights (selected)
+
+Body:
+Heavier Things (2003), Battle Studies (2009), Born and Raised (2012), The Search for Everything (2017), Sob Rock (2021)—each marks a distinct songwriting mood: introspective acoustic storytelling, adult-contemporary polish, and 1980s-inspired soft-rock pastiche.
+
+Beyond singles, deep cuts reward listeners who care about guitar arranging, horn pads, and trio interplay when he tours with his live band.
+
+Keep copyright sensitivity: reference song titles factually; do not reproduce lengthy lyrics in slides unless cleared.
+
+Footer:
+©2026 Collaboration Design. All rights reserved.
+
+================================================================================
+SLIDE 8 — layout: statement
+================================================================================
+Slide pre-title:
+Records & songs
+
+Statement:
+I'm trying to make music that feels honest—even when the production is shiny.
+
+Footer:
+©2026 Collaboration Design. All rights reserved.
+
+================================================================================
+SLIDE 9 — layout: section-divider
+================================================================================
+Section title:
+Guitar & live performance
+
+Subtitle:
+Tone, technique, collaboration
+
+Footer:
+©2026 Collaboration Design. All rights reserved.
+
+================================================================================
+SLIDE 10 — layout: tile-slide
+================================================================================
+Slide pre-title:
+Guitar & live performance
+
+Title:
+What people attach to his musicianship
+
+Body (supporting intro):
+Four recurring lenses audiences use when describing Mayer—use tiles to cue talking points, not to overload text.
+
+Tiles (2–4; one focused at most):
+
+Tile 1 — Blues vocabulary (rest)
+SRV / Clapton lineage refracted through modern pop songcraft.
+
+Tile 2 — PRS partnership (FOCUS)
+Signature instruments that shaped his clean edge-of-breakup palette.
+
+Tile 3 — Dead & Company era (rest)
+Jam vocabulary, ensemble listening, long-form improvisation.
+
+Tile 4 — Live arrangement (rest)
+Trio vs full band; dynamics as storytelling.
+
+Footer:
+©2026 Collaboration Design. All rights reserved.
+
+================================================================================
+SLIDE 11 — layout: full-image-slide
+================================================================================
+Title (optional):
+Live performance
+
+Body text (optional):
+Swap this region for a licensed concert photo or official press asset—large imagery carries the slide.
+
+Media note (your asset planning):
+Placeholder: arena / festival shot or official promo still.
+
+Footer:
+©2026 Collaboration Design. All rights reserved.
+
+================================================================================
+SLIDE 12 — layout: section-divider
+================================================================================
+Section title:
+Cultural footprint
+
+Subtitle:
+Influence beyond the charts
+
+Footer:
+©2026 Collaboration Design. All rights reserved.
+
+================================================================================
+SLIDE 13 — layout: content-two-columns
+================================================================================
+Slide pre-title:
+Cultural footprint
+
+Title 1:
+Guitar culture
+
+Body 1:
+Influenced a generation of players chasing touch, timing, and hybrid picking—often studied through live clips and rig-breakdown content.
+
+Title 2:
+Pop songwriting
+
+Body 2:
+Melodic hooks and conversational lyrics helped bridge blues-rock credibility with mainstream playlists and acoustic covers.
+
+Footer:
+©2026 Collaboration Design. All rights reserved.
+
+================================================================================
+SLIDE 14 — layout: content-three-columns
+================================================================================
+Slide pre-title:
+Cultural footprint
+
+Title 1:
+Collaboration
+
+Body 1:
+Cross-genre sessions and tours expanded his audience beyond solo pop-radio listeners.
+
+Title 2:
+Longevity
+
+Body 2:
+Reinvention across albums kept relevance across shifting streaming-era tastes.
+
+Title 3:
+Conversation
+
+Body 3:
+Public discourse around artistry vs celebrity—use carefully in corporate settings.
+
+Footer:
+©2026 Collaboration Design. All rights reserved.
+
+================================================================================
+SLIDE 15 — layout: conclusion-slide
+================================================================================
+Salutation:
+Thank you
+
+Footer:
+©2026 Collaboration Design. All rights reserved.

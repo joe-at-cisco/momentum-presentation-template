@@ -1,13 +1,15 @@
 # Momentum presentation — reference
 
-## Canonical Figma Slides template
+## Canonical template source (Design file)
 
-- **URL**: [Momentum Presentation template (Figma Slides)](https://www.figma.com/slides/uOoNV3gzn0378KhDBqam8a)
-- **Slides file id** (from URL path): `uOoNV3gzn0378KhDBqam8a`
+- **URL**: [Momentum Presentation Templates — Local Source File](https://www.figma.com/design/6H5CByIMGf2FZ9rGVYnQnn/Momentum-Presentation-Templates---Local-Source-File?node-id=0-1)
+- **`template_file_key`** (segment after `/design/`): `6H5CByIMGf2FZ9rGVYnQnn`
 
-Use this id in `deck-manifest.yaml` as `meta.template_file_key` (or add `meta.template_url` with the full URL) until your toolchain documents a different key for API/MCP access.
+Use this key in `deck-manifest.yaml` as `meta.template_file_key` (and `meta.template_url` with the full URL above).
 
-**Note:** This file lives under **Figma Slides** (`/slides/…`), not necessarily `figma.com/design/…`. Official Figma MCP flows often assume **design files** with `fileKey` + `node-id`. If MCP read/write fails for Slides, fall back to manual inspection in Figma or duplicate masters into a linked Design file—whatever your team standardizes.
+**Note:** This is a standard **Figma Design** file (`figma.com/design/…`). It contains **slides numbered 1 through 13** that correspond to the same layout families and metadata described in [layout-inventory.md](layout-inventory.md). **Automated deck builds** still create frames in the **destination** Design file recorded in **`meta.design_url`** and **`meta.design_file_key`** (see manifest schema below); the Local Source file is the canonical reference for layouts and duplication.
+
+**Automation (repository scripts):** From the project root, run **`python scripts/build_momentum_library_deck.py deck-manifest.yaml`** to print Plugin API JavaScript that places template **component instances** in the deck file (`importComponentByKeyAsync`); run **`python scripts/build_momentum_fill_text.py deck-manifest.yaml`** to print JS that fills **TEXT** nodes from this manifest. Pipe or paste the output into Figma MCP **`use_figma`** targeting **`meta.design_file_key`**. See [SKILL.md](SKILL.md) §3 (two-phase build). Component keys are **not** documented here—probe **`meta.template_file_key`** in Figma or regenerate from an aligned checkout.
 
 ## Deck manifest schema (`deck-manifest.yaml`)
 
@@ -16,8 +18,10 @@ Use YAML for human edits and diff-friendly updates. Adapt field names to match r
 ```yaml
 meta:
   title: "Deck title"
-  template_url: "https://www.figma.com/slides/uOoNV3gzn0378KhDBqam8a"
-  template_file_key: "uOoNV3gzn0378KhDBqam8a"
+  design_url: "https://www.figma.com/design/<designFileKey>/<fileName>"
+  design_file_key: "<designFileKey>"
+  template_url: "https://www.figma.com/design/6H5CByIMGf2FZ9rGVYnQnn/Momentum-Presentation-Templates---Local-Source-File?node-id=0-1"
+  template_file_key: "6H5CByIMGf2FZ9rGVYnQnn"
   template_version: "optional label or date"
   organization: "optional; default Collaboration Design for footer copy when unspecified"
   audience: "optional"
@@ -43,11 +47,14 @@ slides:
 
 **Rules**
 
+- **`design_url` / `design_file_key`**: Target **Figma Design file** (`figma.com/design/…`) where each slide is built as a **frame**. `design_file_key` is the URL segment after `/design/` (MCP `use_figma`, REST). Set both once the destination file is known.
 - `number`: integer ≥ 1; unique across the deck.
 - `layout`: use the stable **`layout` id** from [layout-inventory.md](layout-inventory.md) (e.g. `title-slide`, `content-two-columns`). Optional `variant` maps to Figma component variants when applicable.
 - Optional `figma_node_id`: helps targeted updates when using MCP or manual sync.
 
 Per-slide content keys (title, body, columns, tiles, etc.) should match the **slots** documented for that layout in [layout-inventory.md](layout-inventory.md).
+
+**Frame layout (Design file):** When building slides as frames in **`meta.design_file_key`**, stack them in **`slides[].number`** order with a **100px gap** between adjacent frames (vertical column: step each frame’s **`y`** by **slide height + 100**). See [SKILL.md](SKILL.md) workflow §3.
 
 ## Inserting, deleting, reordering slides
 
@@ -92,8 +99,10 @@ Full inventory—purposes, required/optional slots, footer defaults, and composi
 ```yaml
 meta:
   title: "Intro to Topic X"
-  template_url: "https://www.figma.com/slides/uOoNV3gzn0378KhDBqam8a"
-  template_file_key: "uOoNV3gzn0378KhDBqam8a"
+  design_url: "https://www.figma.com/design/yourDesignFileKey/deck-file-name"
+  design_file_key: "yourDesignFileKey"
+  template_url: "https://www.figma.com/design/6H5CByIMGf2FZ9rGVYnQnn/Momentum-Presentation-Templates---Local-Source-File?node-id=0-1"
+  template_file_key: "6H5CByIMGf2FZ9rGVYnQnn"
   organization: "Collaboration Design"
 
 slides:

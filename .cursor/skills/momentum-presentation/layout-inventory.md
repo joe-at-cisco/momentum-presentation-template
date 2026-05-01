@@ -1,6 +1,6 @@
 # Layout inventory — Momentum Presentation template
 
-Canonical template: [Figma Slides file](https://www.figma.com/slides/uOoNV3gzn0378KhDBqam8a) (`uOoNV3gzn0378KhDBqam8a`).
+Canonical template: [Momentum Presentation Templates — Local Source File](https://www.figma.com/design/6H5CByIMGf2FZ9rGVYnQnn/Momentum-Presentation-Templates---Local-Source-File?node-id=0-1) (`6H5CByIMGf2FZ9rGVYnQnn`).
 
 Use the **`layout`** column value in `deck-manifest.yaml` (`layout: "<id>"`).
 

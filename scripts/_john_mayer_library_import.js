@@ -1,0 +1,60 @@
+const LAYOUT_KEYS = {"title-slide": "198a4fd0512b1cd2a06604b76ef4c41823668ded", "agenda": "418f12e36787e660e84b819026470f3ce5309dcb", "section-divider": "96b8c26a5279f8ff4fb86b717c34a5c247193ebc", "statement": "293212c3bff9b9092dc28e6bac3634839fd80471", "tile-slide": "95e350c5010470412cf5c3066a55371396049137", "full-image-slide": "ad5a64fd884126081b8fed27f851e3aafe8bbb97", "empty-with-title": "9bb3468fa950982ad7eb29c7a5d7d579561ad723", "content-single-column-left": "7d28d8abe801971254600b7196154f2604157f58", "content-single-column-right": "17981e7f7180f0650fe0e78c7aa73ce952ca57ff", "content-single-column-full-width": "f01b996365f3c8963bf035e6150f0f912f3aa41a", "content-two-columns": "7271b05cdb90d5b2a4cb2ef991a557207fbb1513", "content-three-columns": "f620fbcf74a69cb9fe9393dd280f3124bde4ffee", "conclusion-slide": "261b3371e3cabb5635ff66bcbdd4c7becc7645d5"};
+const slides = [{"number": 1, "layout": "title-slide", "pre_title": "Artist spotlight", "title": "John Mayer", "subtitle": "Singer, songwriter, guitarist", "presenter": "Momentum template demo", "date": "April 30, 2026", "speaker_notes": "Set context: prolific artist across pop, blues, and jam-band worlds—not only radio singles."}, {"number": 2, "layout": "agenda", "pre_title": "John Mayer", "main_heading": "Agenda", "agenda_sections": [{"number": 1, "title": "Career arc", "subtitle": "From clubs to arenas"}, {"number": 2, "title": "Records & songs", "subtitle": "Albums that define his sound"}, {"number": 3, "title": "Guitar & live performance", "subtitle": "Tone, technique, collaboration"}, {"number": 4, "title": "Cultural footprint", "subtitle": "Influence beyond the charts"}], "footer": true, "speaker_notes": "Four sections—keep transitions tight so the deck stays under ~15 minutes."}, {"number": 3, "layout": "section-divider", "section_title": "Career arc", "subtitle": "From clubs to arenas", "footer": true}, {"number": 4, "layout": "content-single-column-left", "slide_pre_title": "Career arc", "title": "Origins & breakthrough", "body": ["Born October 16, 1977; grew up in Connecticut and gravitated early to blues rock and Stevie Ray Vaughan.", "Brief Berklee College of Music studies, then the Atlanta singer-songwriter circuit—building a live fanbase before mainstream radio.", "Debut studio LP Room for Squares (2001, wide release 2003) catalyzed hits like \"Your Body Is a Wonderland\" and established his melodic, conversational songwriting voice."], "footer": true, "speaker_notes": "Emphasize live-first credibility—his career was never only studio polish."}, {"number": 5, "layout": "content-single-column-right", "slide_pre_title": "Career arc", "title": "Continuum & artistic pivot", "body": ["Continuum (2006) widened his blues vocabulary and guitar hero credibility—tracks like \"Gravity\" and \"Waiting on the World to Change\" balanced FM hooks with extended solo sections live.", "Grammy recognition and evolving production choices (from polished pop-rock to rootsier textures on later albums) show a long arc rather than a single \"sound era.\""], "footer": true}, {"number": 6, "layout": "section-divider", "section_title": "Records & songs", "subtitle": "Albums that define his sound", "footer": true}, {"number": 7, "layout": "content-single-column-full-width", "slide_pre_title": "Records & songs", "title": "Studio highlights (selected)", "body": ["Heavier Things (2003), Battle Studies (2009), Born and Raised (2012), The Search for Everything (2017), Sob Rock (2021)—each marks a distinct songwriting mood: introspective acoustic storytelling, adult-contemporary polish, and 1980s-inspired soft-rock pastiche.", "Beyond singles, deep cuts reward listeners who care about guitar arranging, horn pads, and trio interplay when he tours with his live band.", "Keep copyright sensitivity: reference song titles factually; do not reproduce lengthy lyrics in slides unless cleared."], "footer": true}, {"number": 8, "layout": "statement", "slide_pre_title": "Records & songs", "statement": "I'm trying to make music that feels honest—even when the production is shiny.", "footer": true, "speaker_notes": "Paraphrase or swap for a verified Mayer quote if presenting formally; avoid presenting fan attributions as exact quotes."}, {"number": 9, "layout": "section-divider", "section_title": "Guitar & live performance", "subtitle": "Tone, technique, collaboration", "footer": true}, {"number": 10, "layout": "tile-slide", "slide_pre_title": "Guitar & live performance", "title": "What people attach to his musicianship", "body": "Four recurring lenses audiences use when describing Mayer—use tiles to cue talking points, not to overload text.", "tiles": [{"title": "Blues vocabulary", "body": "SRV / Clapton lineage refracted through modern pop songcraft.", "focused": false}, {"title": "PRS partnership", "body": "Signature instruments that shaped his clean edge-of-breakup palette.", "focused": true}, {"title": "Dead & Company era", "body": "Jam vocabulary, ensemble listening, long-form improvisation.", "focused": false}, {"title": "Live arrangement", "body": "Trio vs full band; dynamics as storytelling.", "focused": false}], "footer": true}, {"number": 11, "layout": "full-image-slide", "title": "Live performance", "body_text": "Swap this region for a licensed concert photo or official press asset—large imagery carries the slide.", "media": {"note": "Placeholder: arena / festival shot or official promo still."}, "footer": true}, {"number": 12, "layout": "section-divider", "section_title": "Cultural footprint", "subtitle": "Influence beyond the charts", "footer": true}, {"number": 13, "layout": "content-two-columns", "slide_pre_title": "Cultural footprint", "title_1": "Guitar culture", "body_1": "Influenced a generation of players chasing touch, timing, and hybrid picking—often studied through live clips and rig-breakdown content.", "title_2": "Pop songwriting", "body_2": "Melodic hooks and conversational lyrics helped bridge blues-rock credibility with mainstream playlists and acoustic covers.", "footer": true}, {"number": 14, "layout": "content-three-columns", "slide_pre_title": "Cultural footprint", "title_1": "Collaboration", "body_1": "Cross-genre sessions and tours expanded his audience beyond solo pop-radio listeners.", "title_2": "Longevity", "body_2": "Reinvention across albums kept relevance across shifting streaming-era tastes.", "title_3": "Conversation", "body_3": "Public discourse around artistry vs celebrity—use carefully in corporate settings.", "footer": true}, {"number": 15, "layout": "conclusion-slide", "salutation": "Thank you", "footer": true, "speaker_notes": "Offer Q&A or point to playlist / album recommendations."}];
+
+const SW = 1920;
+const SH = 1080;
+const GAP = 100;
+const START_X = 80;
+const START_Y = 80;
+
+await figma.setCurrentPageAsync(figma.root.children[0]);
+const page = figma.currentPage;
+page.name = "Deck";
+
+const loaded = await figma.listAvailableFontsAsync();
+for (const { fontName } of loaded) {
+  if (fontName.family === "Inter" || fontName.family === "Roboto") {
+    try {
+      await figma.loadFontAsync(fontName);
+    } catch (e) {}
+  }
+}
+
+for (let i = page.children.length - 1; i >= 0; i--) {
+  const ch = page.children[i];
+  if (ch.type === "FRAME" && /^Slide \d{2}/.test(ch.name)) {
+    ch.remove();
+  }
+}
+
+const createdIds = [];
+let idx = 0;
+for (const slide of slides) {
+  const key = LAYOUT_KEYS[slide.layout];
+  if (!key) {
+    throw new Error("Unknown layout: " + slide.layout);
+  }
+  const comp = await figma.importComponentByKeyAsync(key);
+  const inst = comp.createInstance();
+  inst.resize(SW, SH);
+  const wrap = figma.createFrame();
+  wrap.resize(SW, SH);
+  wrap.name =
+    "Slide " + String(slide.number).padStart(2, "0") + " — " + slide.layout;
+  wrap.fills = [];
+  wrap.clipsContent = true;
+  wrap.appendChild(inst);
+  inst.x = 0;
+  inst.y = 0;
+  page.appendChild(wrap);
+  wrap.x = START_X;
+  wrap.y = START_Y + idx * (SH + GAP);
+  createdIds.push(wrap.id);
+  idx++;
+}
+
+return {
+  createdFrameIds: createdIds,
+  slideCount: createdIds.length,
+  pageName: page.name,
+};
